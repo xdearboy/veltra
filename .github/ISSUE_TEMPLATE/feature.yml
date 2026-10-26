@@ -1,6 +1,6 @@
 name: Предложить функцию
 description: Расскажи, чего не хватает и кому это поможет
-title: ""
+title: "[Идея]: "
 labels: ["идея"]
 body:
   - type: markdown
