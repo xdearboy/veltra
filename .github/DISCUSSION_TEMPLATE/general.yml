@@ -1,0 +1,18 @@
+title: "Обсудить"
+body:
+  - type: markdown
+    attributes:
+      value: "Общий раздел для вопросов и тем, которые пока не подходят под отдельную категорию."
+  - type: textarea
+    id: topic
+    attributes:
+      label: О чём хочешь поговорить?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Контекст
+      description: Ссылки и подробности, если они помогут разобраться.
+    validations:
+      required: false

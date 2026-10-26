@@ -1,0 +1,17 @@
+title: "Вопрос"
+body:
+  - type: markdown
+    attributes:
+      value: "Сначала проверь, не обсуждали ли это раньше. Если вопрос про конкретную функцию, можешь приложить ссылку на issue."
+  - type: textarea
+    id: question
+    attributes:
+      label: В чём вопрос?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Что уже пробовал или проверил?
+    validations:
+      required: false

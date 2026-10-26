@@ -1,0 +1,17 @@
+title: "Объявление"
+body:
+  - type: markdown
+    attributes:
+      value: "Шаблон для новостей проекта. Объявления публикуют только сопровождающие."
+  - type: textarea
+    id: announcement
+    attributes:
+      label: Что нового?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Подробности и ссылки
+    validations:
+      required: false

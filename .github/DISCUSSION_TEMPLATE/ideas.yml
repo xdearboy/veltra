@@ -1,0 +1,26 @@
+title: "Предложить идею"
+body:
+  - type: markdown
+    attributes:
+      value: "Если идея уже оформлена как конкретная функция — заведи issue. Здесь можно сначала обсудить её, собрать мнения и понять, кому она нужна."
+  - type: textarea
+    id: idea
+    attributes:
+      label: Что предлагаешь?
+      description: Опиши мысль своими словами.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Зачем это нужно?
+      description: Какую проблему это решит и кому поможет?
+    validations:
+      required: true
+  - type: textarea
+    id: discussion
+    attributes:
+      label: Что стоит обсудить?
+      description: Варианты реализации, ограничения или открытые вопросы.
+    validations:
+      required: false

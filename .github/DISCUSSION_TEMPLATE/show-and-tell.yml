@@ -1,0 +1,21 @@
+title: "Показать свою идею или наработку"
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Что сделал или придумал?
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Как это связано с Veltra?
+      description: Расскажи, что проверил и какую обратную связь хочешь получить.
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: Ссылки и материалы
+    validations:
+      required: false
