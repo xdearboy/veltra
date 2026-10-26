@@ -1,0 +1,39 @@
+name: Сообщить о проблеме
+description: Сообщи о баге в репозитории или уже выпущенной части проекта
+title: "[Баг]: "
+labels: ["баг"]
+body:
+  - type: markdown
+    attributes:
+      value: "Платформа ещё не разработана, поэтому шаблон пригодится для ошибок в материалах проекта и будущих версиях."
+  - type: textarea
+    id: observed
+    attributes:
+      label: Что случилось?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Что ожидал увидеть?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить проблему?
+      placeholder: "1. ...\n2. ...\n3. ..."
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: Версия или ссылка на страницу
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Логи, скриншоты или другие детали
+    validations:
+      required: false

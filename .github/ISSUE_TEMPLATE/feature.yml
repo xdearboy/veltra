@@ -1,0 +1,44 @@
+name: Предложить функцию
+description: Расскажи, чего не хватает и кому это поможет
+title: ""
+labels: ["идея"]
+body:
+  - type: markdown
+    attributes:
+      value: "Опиши запрос своими словами. Тут не нужно сразу придумывать техническое решение."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Что сейчас неудобно или невозможно?
+      description: Какую задачу пытаешься решить?
+      placeholder: "Когда я ..., мне приходится ..."
+    validations:
+      required: true
+  - type: textarea
+    id: users
+    attributes:
+      label: Кому это пригодится?
+      description: Например, владельцам панели, администраторам или клиентам VPN-сервиса.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Какой результат ты ожидаешь?
+      description: Расскажи, как функция должна выглядеть для тебя. Детали можно уточнить в обсуждении.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Как обходишься сейчас?
+      description: Необязательно. Подойдут ссылки, примеры или скриншоты.
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Перед отправкой
+      options:
+        - label: Я поискал похожие issues и не нашёл такой же запрос.
+          required: true

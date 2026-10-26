@@ -1,0 +1,35 @@
+name: Обсудить архитектуру или технологии
+description: Предложи технический подход и объясни, зачем он нужен
+title: "[Архитектура]: "
+labels: ["обсуждение", "архитектура"]
+body:
+  - type: markdown
+    attributes:
+      value: "Технические решения пока не зафиксированы. Сначала проверим, какие требования этот подход закрывает."
+  - type: textarea
+    id: context
+    attributes:
+      label: Какую задачу решаем?
+      description: Ссылка на issue с функцией или краткое описание контекста.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Какой подход предлагаешь?
+      description: Можно приложить схему, пример или ссылку.
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Плюсы, минусы и альтернативы
+      description: Что станет проще, что усложнится? Какие варианты ещё рассматривал?
+    validations:
+      required: true
+  - type: textarea
+    id: open_questions
+    attributes:
+      label: Что нужно проверить или обсудить?
+    validations:
+      required: false
